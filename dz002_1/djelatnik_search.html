@@ -1,0 +1,75 @@
+<html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Projekat iz razvoj naprednih web aplikacija">
+        <meta name="keywords" content="HTML CSS JavaScript">
+        <meta name="author" content="Luka Blažević Petar Šimović">
+        <title>Projekt RNWA</title>
+		<link rel="stylesheet" href="css/style.css">
+       
+		
+
+<script>
+function showHint(str) {
+    if (str.length == 0) { 
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET", "djelatnik_search.php?s=" + str, true);
+        xmlhttp.send();
+    }
+}
+</script>
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="logo">
+                    <h1>Razvoj <span class="highlight">naprednih</span> web aplikacija </h1> 
+					
+                </div>
+                <div id="registration">
+                    <ul>
+                        <li><a href="#">Log in</a></li>
+                        <li><a href="#">Registration</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <ui>
+                        <li ><a href="index.html">Početna</a></li>
+                        <li><a href="about.html">Git-HUB</a></li>
+                        <li><a href="http://fsre.sum.ba/naslovnica/">Fakultet</a></li>
+						<li class="current"><a href="djelatnik_search.html">Pretraži djelatnike</a></li>
+                       
+                    </ui>
+                </nav>
+            </div>
+        </header>
+        <section id="back2">
+        <div class="container">
+            <section id="left">
+               <p><b>Start typing a name in the input field below:</b></p>
+<form> 
+First name: <input type="text" onkeyup="showHint(this.value)">
+</form>
+<p>Suggestions:<br> <span id="txtHint" style="color:red"></span></p>
+            </section>
+            
+        </div>
+        </section>
+        <footer>
+            <p>Projekt razvoj naprednih web aplikacija, Copyright &copy; 2021</p>
+            <p>Petar Šimović @email: <a href="mailto:pertar.simovi@student.fsre.ba">pertar.simovi@student.fsre.ba</a></p>
+            <p>Luka Blažević @email: <a href="mailto:luka.blazevic@student.fsre.ba">luka.blazevic@student.fsre.ba</a></p>
+        </footer>
+    </body>
+</html>
