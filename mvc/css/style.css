@@ -1,0 +1,145 @@
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin:0;
+    background-color: #f4f4f4;
+}
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#customers td, #customers th {
+    font-size: 1em;
+    border: 1px solid #e8491d;
+    padding: 3px 7px 2px 7px;
+}
+
+#customers th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #e8491d;
+    color: black;
+}
+
+#customers tr.alt td {
+    color: #000000;
+    background-color: #EAF2D3;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+    padding: 0;
+}
+#container1{
+    color:black;
+}
+
+
+#registration ui{
+    margin:0;
+    padding: 0;
+}
+
+header{
+    background: #35424a;
+    color:#ffffff;
+    padding-top:30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+#registration li{
+    float:left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #logo{
+    float:left;
+}
+
+header #logo h1{
+    margin:0;
+}
+
+header #registration{
+    float:right;
+}
+
+header nav ul{
+    margin:0;
+    padding:0;
+}
+
+header nav li{
+    display:inline-block;
+    padding: 0 20px 20px;
+}
+nav{
+    margin-top:100px;
+    
+}
+
+header .highlight, header .current a{
+    color:#e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color:#cccccc;
+}
+#back{
+    min-height: 500px;
+    background:url('../img/laptop-coding22.jpg') no-repeat 0 -200px;
+    text-align: center;
+    color:#ffffff;
+}
+
+#left{
+    margin:0 auto;
+    width:80%;
+    float:left;
+    height: 500px;
+}
+
+#right{
+    margin: 0 auto;
+    width:20%;
+    float:right;
+    background-color: #000;
+    opacity: 0.5;
+    height: 500px;
+    
+}
+
+footer{
+    padding: 20px;
+    margin-top: px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+    border-top: #35424a 3px solid;
+}
+
+footer a{
+    color:#ffffff;
+    text-decoration:none;
+}
+
